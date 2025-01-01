@@ -1,0 +1,56 @@
+// Cypress Terminal Commands
+
+// Open Cypress Test Runner
+// This command opens the Cypress Test Runner where you can select the browser manually.
+
+npx cypress open
+
+// Run all tests headlessly
+// This command runs all the Cypress tests in headless mode.
+
+npx cypress run
+
+// Run tests in a specific browser
+// Replace <browser-name> with the desired browser (e.g., chrome, firefox, edge).
+
+npx cypress run --browser <browser-name>
+
+// Run tests in a specific spec file
+// Replace <spec-file> with the path to your spec file.
+
+npx cypress run --spec "cypress/e2e/<spec-file>.cy.js"
+
+// Run tests with a specific configuration file
+// Replace <config-file> with the path to your configuration file.
+
+npx cypress run --config-file <config-file>.json
+
+// Run tests with environment variables
+// Replace <variable> and <value> with your environment variable and its value.
+
+npx cypress run --env <variable>=<value>
+
+// Record tests to the Cypress Dashboard
+// Replace <record-key> with your Cypress Dashboard record key.
+
+npx cypress run --record --key <record-key>
+
+// Verify Cypress installation
+// This command verifies that Cypress is installed correctly.
+
+npx cypress verify
+
+// Clear Cypress cache
+// This command clears the Cypress cache.
+
+npx cypress cache clear
+
+// Run tests in a specific project path
+// Replace <path-to-project> with the path to your Cypress project.
+
+npx cypress run --project <path-to-project>
+
+// Run tests with a specific reporter
+// Replace <reporter-name> with the name of the reporter you want to use.
+
+npx cypress run --reporter <reporter-name></reporter-name>
